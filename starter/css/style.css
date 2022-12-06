@@ -10,23 +10,20 @@
   display:flex;
 }
 
-#banner-lettering {
+.hero-banner h2 {
   font-family: 'Trebuchet MS';
-  font-size: 200%;
-  margin: 0px 0px;
+  font-size: 300%;
   display: flex;
   align-items: flex-end;
-}
-
-.hero-banner h2 {
   padding: 20px;
   padding-inline: 30px;
   color: white;
 }
 
+
 #background-hero {
   /*background-color: rgb(110, 60, 228);*/
-  background-image: url(../../images/Alhambra\ background.png);
+  background-image: url(../../images/Alhambra\ background\ 2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -250px;
@@ -37,34 +34,114 @@
 .about {
   backdrop-filter: blur(5px);
   color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.about h2 {
+  padding: 0px;
+  padding-inline: 30px;
+}
+
+#aboutMe {
+  padding-inline: 30px;
 }
 
 /*Nav Bar*/
 
-#navBar {
+.navBar {
   display: flex;
+  height: 100px;
   flex-direction: row;
-  margin: 0px 5%;
+  margin: 0px 0%;
+  background-color: rgba(92, 82, 226, 0.63);
+  color: white;
 } 
+
+.navBar h1 {
+  width: 25%;
+  padding-left: 30px;
+  margin-bottom: 5px;
+}
+
+.navigation {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navElements {
+  margin: 0px 3%;
+}
+
+.work {
+  background-color: rgba(92, 82, 226, 0.63);
+  color: white;
+  padding-left: 30px;
+  margin: 0%;
+}
+
+.workGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#alhambra {
+  grid-area: alhambra;
+  background-image: url("../../images/Alhambra\ 13_09_2022\ 2\ [Recovered]-01\ -\ Copy.jpg");
+
+}
+#ladaNiva {
+  grid-area: lada;
+  background-image: url("../../images/ladaNiva-01.png");
+}
+
+#bmw {
+  grid-area: bmw;
+  background-image: url("../../images/bmw-01.png");
+}
+
+#granada {
+  grid-area: granada;
+  background-image: url("../../images/granada-06.png");
+}
+
+#amazing {
+  grid-area: maze;
+  background-image: url("../../images/amazingProblems.png");
+}
+
+#workGrid {
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 350px 350px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "alhambra lada bmw"
+  "granada maze maze"
+  ;
+}
+
+.title {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  height: 30px;
+  color: rgb(94, 94, 94);
+  font-size: 20px;
+  text-align: justify;
+}
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
 }
 
 @media screen {
