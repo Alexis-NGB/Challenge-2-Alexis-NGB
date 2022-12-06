@@ -62,7 +62,7 @@
 
 #background-hero {
   /*background-color: rgb(110, 60, 228);*/
-  background-image: url(../../images/Alhambra\ background\ 2.png);
+  background-image: url(../images/Alhambra\ background\ 2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -250px;
@@ -114,27 +114,27 @@
 
 #alhambra {
   grid-area: alhambra;
-  background-image: url("../../images/Alhambra\ 13_09_2022\ 2\ [Recovered]-01\ -\ Copy.jpg");
+  background-image: url("../images/Alhambra\ 13_09_2022\ 2\ [Recovered]-01\ -\ Copy.jpg");
 
 }
 #ladaNiva {
   grid-area: lada;
-  background-image: url("../../images/ladaNiva-01.png");
+  background-image: url("../images/ladaNiva-01.png");
 }
 
 #bmw {
   grid-area: bmw;
-  background-image: url("../../images/bmw-01.png");
+  background-image: url("../images/bmw-01.png");
 }
 
 #granada {
   grid-area: granada;
-  background-image: url("../../images/granada-06.png");
+  background-image: url("../images/granada-06.png");
 }
 
 #amazing {
   grid-area: maze;
-  background-image: url("../../images/amazingProblems.png");
+  background-image: url("../images/amazingProblems.png");
 }
 
 #workGrid {
