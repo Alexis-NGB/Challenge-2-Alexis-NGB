@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+:root {
+  --main-bg-color: rgba(92, 82, 226, 0.63);
+  --darker-shade: rgb(80, 74, 160, 1);
+  --accent: rgb(255, 255, 255);
+}
+
 /*Nav Bar*/
 
 .navBar {
@@ -11,8 +17,8 @@
   height: 100px;
   flex-direction: row;
   margin: 0px 0%;
-  background-color: rgba(92, 82, 226, 0.63);
-  color: white;
+  background-color: var(--main-bg-color);
+  color: var(--accent);
 } 
 
 .navBar h1 {
@@ -50,7 +56,7 @@
   align-items: flex-end;
   padding: 20px;
   padding-inline: 30px;
-  color: white;
+  color: var(--accent);
 }
 
 
@@ -67,7 +73,7 @@
 .about {
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.253);
-  color: white;
+  color: var(--accent);
   padding-block: 10px;
   display: flex;
   flex-direction: column;
@@ -84,8 +90,8 @@
 }
 
 .work {
-  background-color: rgba(92, 82, 226, 0.63);
-  color: white;
+  background-color: var(--main-bg-color);
+  color: var(--accent);
   padding-left: 30px;
   height: 75px;
   display: flex;
@@ -154,8 +160,8 @@
 }
 
 .contact {
-  background-color: rgba(92, 82, 226, 0.63);
-  color: white;
+  background-color: var(--main-bg-color);
+  color: var(--accent);
   height: 75px;
   display:flex;
   flex-direction: row;
@@ -186,8 +192,8 @@ footer {
   padding: 30px;
   clear: both;
   text-align: center;
-  background-color:rgb(80, 74, 160);
-  color: white;
+  background-color:var(--darker-shade);
+  color: var(--accent);
 }
 
 footer h2 {
@@ -205,11 +211,18 @@ body {
  #workGrid {
   margin: 0px;
   display: grid;
-  grid-template-rows: 350px 350px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 350px 350px 350px 350px 350px;
+  grid-template-columns: 1fr;
   grid-template-areas:
-  "alhambra lada bmw"
-  "granada maze maze"
+  "alhambra"
+  "lada"
+  "bmw"
+  "granada"
+  "maze"
   ;
+}
+.navigation {
+  display:none;
+  color: ;
 }
 }
