@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .hero-banner {
@@ -33,14 +35,17 @@
 
 .about {
   backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.253);
   color: white;
+  padding-block: 10px;
   display: flex;
   flex-direction: column;
+  padding-block: 20px;
 }
 
 .about h2 {
-  padding: 0px;
   padding-inline: 30px;
+  padding-block: 10px;
 }
 
 #aboutMe {
@@ -59,9 +64,11 @@
 } 
 
 .navBar h1 {
-  width: 25%;
+  width: 35%;
   padding-left: 30px;
   margin-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .navigation {
@@ -79,7 +86,13 @@
   background-color: rgba(92, 82, 226, 0.63);
   color: white;
   padding-left: 30px;
-  margin: 0%;
+  height: 75px;
+  display: flex;
+}
+
+.work h2 {
+  display: flex;
+  align-items: center;
 }
 
 .workGridArea {
@@ -129,12 +142,14 @@
 }
 
 .title {
+  backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.7);
   padding: 30px;
   height: 30px;
-  color: rgb(94, 94, 94);
+  color: rgba(0, 0, 0, 0.479);
   font-size: 20px;
-  text-align: justify;
+  align-items: center;
+  display: flex;
 }
 
 body {
