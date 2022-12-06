@@ -4,6 +4,37 @@
   margin: 0;
 }
 
+/*Nav Bar*/
+
+.navBar {
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  margin: 0px 0%;
+  background-color: rgba(92, 82, 226, 0.63);
+  color: white;
+} 
+
+.navBar h1 {
+  width: 100%;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navElements {
+  margin: 0px 3%;
+}
+
+
 .hero-banner {
   margin: 0px;
   min-height: 300px;
@@ -50,36 +81,6 @@
 
 #aboutMe {
   padding-inline: 30px;
-}
-
-/*Nav Bar*/
-
-.navBar {
-  display: flex;
-  height: 100px;
-  flex-direction: row;
-  margin: 0px 0%;
-  background-color: rgba(92, 82, 226, 0.63);
-  color: white;
-} 
-
-.navBar h1 {
-  width: 35%;
-  padding-left: 30px;
-  margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  width: 75%;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.navElements {
-  margin: 0px 3%;
 }
 
 .work {
@@ -152,6 +153,47 @@
   display: flex;
 }
 
+.contact {
+  background-color: rgba(92, 82, 226, 0.63);
+  color: white;
+  height: 75px;
+  display:flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+#contactMe {
+  width: 25%;
+  padding-left: 30px;
+}
+
+#contactLinks {
+  width: 500px;
+  margin-right: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contactMe {
+  justify-content: left;
+  padding-left: 30px;
+}
+
+footer {
+  padding: 30px;
+  clear: both;
+  text-align: center;
+  background-color:rgb(80, 74, 160);
+  color: white;
+}
+
+footer h2 {
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -159,6 +201,15 @@ body {
   line-height: 1.5;
 }
 
-@media screen {
-  
+@media only screen and (max-width: 600px) {
+ #workGrid {
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 350px 350px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "alhambra lada bmw"
+  "granada maze maze"
+  ;
+}
 }
